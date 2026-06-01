@@ -10,7 +10,8 @@ Next.js 14 + TypeScript(strict) + Tailwind 수동 스캐폴딩 완료. `npm inst
 
 ## 완료 항목
 
-- [x] **git 초기화** — `git init` + branch `main` (remote 미설정 — 사용자가 GitHub repo "inside" 생성 후 추가 예정)
+- [x] **git 초기화 + 원격 push** — `git init` + branch `main`, remote `git@github.com:kangcrypee-eng/inside.git` (SSH), `git push -u origin main` 완료
+- [x] **Supabase 연결** — `.env.local` 에 프로젝트 `dscsafqxzqqsnvuurnhq` URL·anon·service_role 키 설정 (anon 키 유효성 검증 완료, gitignore로 커밋 제외)
 - [x] **package.json** — next@^14.2.15, react@^18.3.1, @supabase/supabase-js, @anthropic-ai/sdk, zod, tailwindcss/postcss/autoprefixer, typescript + @types
 - [x] **tsconfig.json** — strict mode, `noUncheckedIndexedAccess`, paths alias `@/*` → `./src/*`
 - [x] **next.config.js** — App Router(기본), reactStrictMode
@@ -34,9 +35,9 @@ Next.js 14 + TypeScript(strict) + Tailwind 수동 스캐폴딩 완료. `npm inst
 
 ## 사용자(Principal) 잔여 D+0 작업
 ai-company 대시보드 노란색 패널 기준:
-1. ❶ GitHub repo "inside" 생성 → `git remote add origin <url>` 후 `git push -u origin main`
-2. ❷ Vercel·Supabase 계정 생성
-3. ❸ 사업자등록증 PDF·면허번호 준비 (+ Toss Payments 사업자 신청 — 리드타임 최대)
+1. ~~GitHub repo 생성·연결~~ ✅ 완료 (kangcrypee-eng/inside, SSH push)
+2. ~~Vercel·Supabase 계정~~ ✅ 완료 (Vercel CLI v54.6.1 설치, Supabase 키 연결)
+3. ❸ 사업자등록증 PDF·면허번호 준비 (+ Toss Payments 사업자 신청 — 리드타임 최대, 오늘 시작 권장) ← **남음**
 
 ## 다음 단계 — D+1 첫 태스크
 `.notes/03__dev-tasks-D1-D7.md` D+1 (백엔드 골격, 8 tasks):
